@@ -1,6 +1,6 @@
 # Ngou Card Analyser
 
-A web app that analyses the best combination given a Ngou hand
+A web app that analyses the best combination given a Ngou hand.
 
 ## Features
 - Base 10 detection
@@ -10,7 +10,10 @@ A web app that analyses the best combination given a Ngou hand
 
 ## Run locally
 
-``` bash
+```bash id="r2"
 pip install -r requirements.txt
 python app.py
-Open http://127.0.0.1:5000/
+```
+Then open: 
+
+http://127.0.0.1:5000/
