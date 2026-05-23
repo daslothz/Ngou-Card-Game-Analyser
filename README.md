@@ -8,6 +8,14 @@ A web app that analyses the best combination given a Ngou hand.
 - Best score detection
 - Interactive card UI
 
+## Live Demo
+
+Try out the calculator here:
+
+https://ngou-card-game-analyser.onrender.com
+
+Note: The free hosted version may take a while to boot
+
 ## Run locally
 
 ```bash id="r2"
