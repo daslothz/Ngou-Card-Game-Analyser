@@ -5,6 +5,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+<div class = "main-layout">
+
+    <div class="instructions-panel">
+        <h2>How to Play</h2>
+
+        <ul>
+            <li>Select 5 cards from the card grid.</li>
+            <li>You may select duplicates up to 4 times.</li>
+            <li>Tick "Do you have A♠?" if applicable.</li>
+            <li>Click Play to analyse your hand.</li>
+        </ul>
+
+        <h3>Hand Rankings</h3>
+
+        <ol>
+            <li>Dong Gu: A♠ + J/Q/K</li>
+            <li>One Pair</li>
+            <li>10 Points</li>
+            <li>Highest Points</li>
+        </ol>
+    </div>
     
     <div class="container">
 
@@ -61,6 +83,7 @@
         {% endif %}
 
     </div>
+</div>
     <script>
         let selected = [];
 
