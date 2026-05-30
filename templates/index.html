@@ -9,7 +9,7 @@
 <div class = "main-layout">
 
     <div class="instructions-panel">
-        <h2>How to Play</h2>
+        <h2>How to use</h2>
 
         <ul>
             <li>Select 5 cards from the card grid.</li>
@@ -58,6 +58,15 @@
                 <input type="hidden" name="card3" id="card3">
                 <input type="hidden" name="card4" id="card4">
                 <input type="hidden" name="card5" id="card5">
+                
+                <div class="hand-preview">
+                    <div class="slot" id="slot0"></div>
+                    <div class="slot" id="slot1"></div>
+                    <div class="slot" id="slot2"></div>
+                    <div class="slot" id="slot3"></div>
+                    <div class="slot" id="slot4"></div>
+                </div>
+
                 <div class="ace-toggle">
                     <label>
                         <input type="checkbox" name="mushroom" value="yes">
@@ -68,13 +77,7 @@
                 <button type="submit">Play</button>
 
             </form>
-        <div class="hand-preview">
-            <div class="slot" id="slot0"></div>
-            <div class="slot" id="slot1"></div>
-            <div class="slot" id="slot2"></div>
-            <div class="slot" id="slot3"></div>
-            <div class="slot" id="slot4"></div>
-        </div>
+
         {% if result %}
         <div class="result-box">
             <h2>Result</h2>
