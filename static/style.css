@@ -112,3 +112,45 @@ button:hover {
 .container {
     flex: 1;
 }
+
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .instructions-panel {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 16px 0;
+        font-size: 16px;
+    }
+
+    .hand-preview {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .slot {
+        width: 45px;
+        height: 60px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
