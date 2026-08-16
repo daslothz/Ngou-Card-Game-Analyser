@@ -128,7 +128,10 @@ def score_points(pair):
         possible_scores.append((3+3 + numbers[0]) %10 if numbers else 6)
         possible_scores.append((3+6 + numbers[0]) %10 if numbers else 9)
         possible_scores.append((6+6 + numbers[0]) %10 if numbers else 2)
-    return max(possible_scores)
+    if 0 in possible_scores:
+        return 0
+    else:
+        return max(possible_scores)
 
 
 # ## Combo maker
@@ -200,6 +203,3 @@ def cow(hand, mushroom):
         return f"Base: {best_base}, \nScore: {best_score}, \n10 Points"
     else:
         return f"Base: {best_base}, \nScore: {best_score}, \nPoints: {best_points}"
-
-
-
